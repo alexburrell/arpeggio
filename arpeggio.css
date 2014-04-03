@@ -1,0 +1,59 @@
+.arpeggio-chord {
+	position: relative;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.arpeggio-chord ul {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.arpeggio-frets {
+	border-top: solid 2px #000;
+}
+
+.arpeggio-frets li {
+	height: 2px;
+	background: #000;
+	margin: 19% 0 0 0;
+}
+
+.arpeggio-strings li {
+	display: inline-block;
+	width: 2px;
+	height: 100%;
+	background: #000;
+}
+
+.arpeggio-strings li + li {
+	margin: 0 0 0 19%;
+}
+
+.arpeggio-positions li {
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 5px;
+	position: absolute;
+	margin: -4px 0 0 -4px;
+}
+
+.arpeggio-positions .none,
+.arpeggio-positions .open {
+	background: none;
+	margin-top: -17px;
+
+}
+
+.arpeggio-positions .none:after {
+	content: 'X';
+}
+
+.arpeggio-positions .open:after {
+	content: 'O';
+}

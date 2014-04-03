@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arpeggio.JS demo</title>
+		<link rel="stylesheet" href="arpeggio.css" />
+	</head>
+	<body>
+		<div id="c-chord"></div>
+
+		<script src="arpeggio.js"></script>
+		<script>
+		var arpeggio = new Arpeggio();
+
+		arpeggio.generateChord('#c-chord', {
+			'position': {
+				'highE': 5,
+				'A': 2,
+				'D': 3,
+				'G': 0,
+				'B': 1,
+				'lowE': false
+			}
+		});
+		</script>
+	</body>
+</html>
